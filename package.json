@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-devchew",
+  "version": "1.0.0",
+  "description": "My personal eslint rules set - DevChew",
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "eslint",
+    "lint",
+    "config",
+    "prettier"
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:devchew/eslint-plugin-devchew.git",
+  "author": "DevChew <the@devchew.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  }
+}
