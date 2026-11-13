@@ -5,7 +5,7 @@ This is my rules for eslint/prettier
 ## Installing
 
 ```
-npm i --dev eslint eslint-config-devchew
+npm i --dev typescript eslint eslint-config-devchew
 ```
 
 extend .eslintrc.js
@@ -13,9 +13,21 @@ extend .eslintrc.js
 {
   "extends": [
     "devchew"
-  ]
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+  }
 }
 ```
+extend run script
+```json
+{
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  }
+}
+```
+
 
 ## Ide confiog examples
 > thanks wesBoss <3
